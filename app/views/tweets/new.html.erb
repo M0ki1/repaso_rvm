@@ -4,8 +4,11 @@
         <div class="form-group col-6">
             <%= form_with model: @tweet do |f|%>
                 <%= f.text_field :body, placeholder:"Comparte tu estado", class:"form-control"%>
+                <%= f.text_field :hashtags, placeholder:"hashtags", class:"form-control"%>
+                
                 <%= f.submit "Guardar",class:"btn btn-primary mt-4"%>
             <% end %>
         </div>
+
     </div>
 </div>
