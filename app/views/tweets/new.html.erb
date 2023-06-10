@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>New Tweet</h1>
+    <div class="form-row">
+        <div class="form-group col-6">
+            <%= form_with model: @tweet do |f|%>
+                <%= f.text_field :body, placeholder:"Comparte tu estado", class:"form-control"%>
+                <%= f.submit "Guardar",class:"btn btn-primary mt-4"%>
+            <% end %>
+        </div>
+    </div>
+</div>
