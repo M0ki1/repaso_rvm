@@ -5,4 +5,6 @@ class Tweet <ApplicationRecord
         created_at.strftime("%e %b %Y")
 
     end
+
+   
 end
