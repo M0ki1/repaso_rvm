@@ -1,4 +1,5 @@
 class Tweet <ApplicationRecord
+    has_many :tags
     belongs_to :user
 
     def creation_date
